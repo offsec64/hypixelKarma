@@ -23,7 +23,7 @@
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const uuid = urlParams.get('uuid')
-        fetch('https://api.hypixel.net/player?key=' + process.env.REACT_APP_HYPIXEL_API_KEY + '&uuid=' + uuid)
+        fetch('https://api.hypixel.net/player?key=' + process.env.REACT_APP_API_KEY + '&uuid=' + uuid)
             .then(function (response) {
                 return response.json();
             })
